@@ -1,0 +1,321 @@
+
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+​
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+  html {
+    box-sizing: border-box;
+  height: 100%;
+  font-size: 100%;
+}
+body {
+  position: relative;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em; /* em sert pour les écrans apple. Le em prends les valeur de la boite parents a faire gaffe / Pour la reset, c'est "X"rem; 1em==>16px */
+  font-weight: 300;
+  line-height: 1.625em; /*26px*/
+  color: #76787c;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+}
+/* links */
+/* -----------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #D35F60;
+}
+a:active,
+a:hover,
+a:focus {
+  color: #934243;
+}
+/* typographie */
+/* -----------------------------------------------------*/
+h1, .h1-like, 
+h2, .h2-like, 
+h3, .h3-like, 
+h4, .h4-like, 
+h5, .h5-like, 
+h6, .h6-like {
+  font-weight: 700;
+  color: #1C1F26;
+  margin: 0 0 0.71875em 0;
+  line-height: 1.25em;
+}
+h1, .h1-like {
+  font-size: 2em;
+}
+h2, .h2-like {
+  font-size: 1.75em;
+}
+h3, .h3-like {
+  font-size: 1.5em;
+}
+h4, .h4-like {
+  font-size: 1.25em;
+}
+h5, .h5-like {
+  font-size: 1.125em;
+}
+h6, .h6-like {
+  font-size: 1em;
+}
+p {
+  margin: 0 0 0.71875em 0;
+}
+/* Grouping content */
+/*---------------------------------------------------*/
+img{
+  max-width: 100%; /* 100% de la boite !PARENT! */
+  height: auto;
+  vertical-align: bottom;
+}
+/* -----------------------------------------------------*/
+/* CONTENT */
+/* -----------------------------------------------------*/
+.container{
+  margin: 0 auto;
+  max-width:1080px;
+}
+.row{display:flex;}
+.col-1{width:8.333333%;}
+.col-2{width:16.666666%}
+.col-3{width:25%;}   
+.col-4{width:33.333333%;}
+.col-5{width:41.666666%;}    
+.col-6{width:50%;}
+.col-7{width:58.333333%;}
+.col-8{width:66.666666%;}
+.col-9{width:75%;}   
+.col-10{width:83.333333%;}   
+.col-11{width:91.666666%;}   
+.col-12{width:100%;}    
+/* Helpers */
+/* -------------------------------------------------------- */
+.text-left{text-align:left}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-justify{text-align:justify}
+.btn{
+  background-color: #d7142b;
+  padding:12px 20px;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight:bold;
+  display:inline-block;
+  margin:0 auto;
+}
+/* Header */
+/* -------------------------------------------------------- */
+#site-header{
+  position:fixed;
+  width:100%;
+  background-color:white;
+  padding: 0 80px;
+  line-height:60px;
+}
+#site-header .logo h1{
+  color: #d7142b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size:22px;
+  line-height:60px;
+}
+#site-header nav{
+  text-align:right;
+  flex-grow: 2;
+}
+#site-header nav ul{margin:0} 
+#site-header nav ul li{
+  display: inline-block;
+  margin-left:20px;
+}
+#site-header nav ul li a{
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform: uppercase;;
+}
+/* Main */
+/* -------------------------------------------------------- */
+#creations header,
+#whoweare header,
+#methodologie header{
+  padding:200px 0;
+  background-position:center center;
+  background-size:cover;
+  background-attachment: fixed; /*permet de fixer l'image de font*/
+}
+section .content{
+  padding:100px 0 40px 0;
+}
+.text-content{
+  padding:0 120px 0 0;
+}
+.text-content h1{
+  font-size:20px;
+  font-weight:700;
+  text-transform: uppercase;
+  margin-bottom:30px;}
+.text-content h2{
+  font-size:18px;
+  font-weight:700;
+  text-transform: uppercase;
+}
+.text-content h3{
+  font-size:28px;
+  font-weight:700;
+  text-transform: uppercase;
+}
+.text-content h4{
+  font-size:16px;
+  font-weight:700;
+  text-transform: uppercase;
+}
+.text-content p{
+  font-weight:300;
+  font-size:12px;
+  line-height:24px;
+}
+#welcome{
+  background-image: url(../img/Luciole-test-8-web.jpg);
+  padding:200px 0;
+  background-position:center center;
+  background-size:cover;
+}
+#creations header{
+  background-image: url(../img/Luciole-test-23.jpg);
+}
+#methodologie header{
+  background-image: url(../img/LUC-Methodologie.jpg);
+}
+#creations .content div.col-6{
+  margin-bottom:60px;
+}
+#creations .content div.col-6:first-child{
+  padding-right:30px
+}
+#creations .content div.col-6:last-child{
+  padding-left:30px;
+}
+#whoweare header{
+  background-image: url(../img/LUC-Quisommesnous.jpg);
+}
+#team header{
+  background-color: #d7142b;
+  text-align:center;
+  color:white;
+  padding:80px 0
+}
+#team header h2{
+  color:white;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  margin-bottom:0px;
+  font-weight:300;
+  font-size:18px;
+}
+#team{
+  padding-bottom:80px;
+}
+/* Aside */
+/* ------------------------------------------------------- */
+/* Footer */
+/* ------------------------------------------------------- */
+footer{
+  background-color: #d7142b;
+  padding:120px 0
+}
+footer h3,
+footer p,
+footer a{
+  color:white;
+}
+footer strong{
+  display:block;
+}
+footer .social a img{
+  width:32px;
+}
+footer .social a{
+  margin-right:10px
+}
+.project{
+  position: relative;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  
+}
+.project-1{
+  background-image: url('../img/SciencesPo-vignette.jpg');
+  overflow:hidden;
+}
+.project-2{
+  background-image: url('../img/WUD-Mag21.jpg');
+  overflow:hidden;
+}
+.absolute-text{
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4)
+}
+.project:hover .absolute-text{
+  bottom:0;
+  transition: 1s;
+}
+/******************************/
+/**POSITION RELATIVE/ABSOLUTE**/
+/******************************/
+#absolute-section{
+  background-color: lightgrey;
+  padding: 100px 0;
+}
+.rectangle1,
+.rectangle2{
+  width: 100%;
+  border: solid 1px black;
+  padding: 50px;
+  position: relative;
+  transition: .5s;
+}
+.cercle1,
+.cercle2{
+  width: 60px;
+  height: 60px;
+  border: solid 5px darkblue;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /**Place le text verticalement**/
+}
+.cercle1,
+.cercle2{
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 30px);/*Attention à la compatibilité sur les anciens navigateurs**/
+  transition: .5s;
+}
+.rectangle2:hover{/**Quand on survole le rectangle.**/
+  background-color: lightcyan;
+  transition: .5s;
+}
+.rectangle2:hover .cercle2{
+  background-color: darkred;
+  transition: top .5s, width .5s, height .5s, line-height .5s, left .5s, transform 5s;
+  top:-20px;
+  width: 80px;
+  height: 80px;
+  line-height: 70px;
+  left: calc(50% - 40px);
+  transform: rotate(-270deg);
+}
